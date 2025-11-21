@@ -17,3 +17,6 @@ const requests = {
     const data = await response.json();
     return data;
   }
+
+  //hardcoded api
+  const DEMO_SECRET_KEY = "DEMO_SECRET_12345"
