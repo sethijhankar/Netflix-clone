@@ -31,7 +31,7 @@ const Row = ({title, fetchURL, rowID}) => {
                 className='bg-white left-0 rounded-full absolute opacity-50 hover:opacity-100 cursor-pointer z-10 hidden group-hover:block' size={40}/>
             <div id={'slider' +rowID} className='w-full h-full overflow-x-scroll whitespace-nowrap scrollbar-hide scroll-smooth relative '>
                 {movies.map((item,id) =>(
-                    <Movie key={id} item={item}/>  
+                    <Movie item={item}/>  //removed key prop
                 ))}
             </div>
             <MdChevronRight
