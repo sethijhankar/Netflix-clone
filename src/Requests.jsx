@@ -10,3 +10,10 @@ const requests = {
   };
 
   export default requests
+
+  //intentional issues
+  export async function fetchMovies(url){
+    const response = await fetch(url);
+    const data = await response.json();
+    return data;
+  }
